@@ -14,7 +14,7 @@ function About () {
 
         <p className="about-text">
           I completed my matric in 2023, and the following year, I decided to
-          explore the world of programming. I started by learning the basics of of web development,
+          explore the world of programming. I started by learning the basics of web development,
           and just building simple projects, and since then I've been growing from there. 
         </p>
       </div>
