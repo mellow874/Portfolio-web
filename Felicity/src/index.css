@@ -5,6 +5,8 @@
   --text-dark: #2a0a17;
   --container: 1100px;
   font-family: 'Poppins', sans-serif;
+  --text: #333;
+  --box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
 }
 
 /* lets all elements have a consistent layout */
@@ -33,11 +35,11 @@ body {
   top: 0;
   left: 0;
   z-index: 1000;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  box-shadow: var(--box-shadow);
 }
 
 .signature {
-  font-size: 20px;
+  font-size: 20px;  
   font-weight: 600;
 }
 
@@ -70,7 +72,7 @@ body {
   font-weight: 600;
   text-decoration: none;
   transition: 0.3s;
-  box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+  box-shadow: var(--box-shadow);
 }
 
 .info-btn:hover {
@@ -101,7 +103,7 @@ body {
 
 .intro-line {
   font-size: 18px;
-  color: #4a1f35;
+  color: var(--text);
   margin-bottom: 30px;
   max-width: 600px;
 }
@@ -114,7 +116,7 @@ body {
   font-weight: 600;
   text-decoration: none;
   transition: 0.3s;
-  box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+  box-shadow: var(--box-shadow);
 }
 
 .btn:hover {
@@ -150,4 +152,43 @@ body {
   background-color: #f488b6; 
   color: #d63384; 
   box-shadow: 0 0 10px #ffb6c1;
+}
+
+/* 👩 ABOUT SECTION */
+.about-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 700px;
+  background-color: var(--dark-pink);
+  padding: 40px 16px;
+  color: var(--text);
+}
+
+.about-container {
+  max-width: 800px;
+  background: var(--white);
+  padding: 48px;
+  border-radius: 20px;
+  box-shadow: var(--box-shadow);
+}
+
+.about-title {
+  font-size: 40px;
+  text-align: center;
+  margin-bottom: 32px;
+  color: #ff007f;
+  font-weight: 700;
+}
+
+.about-text {
+  line-height: 1.8;
+  font-size: 18px;
+  margin-bottom: 24px;
+  color: var(--text);
+}
+
+.highlight {
+  color: #ff007f;
+  font-weight: 600;
 }
