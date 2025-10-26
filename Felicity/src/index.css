@@ -91,7 +91,7 @@ body {
   flex-direction: column;
 
   padding: 150px 20px 100px;
-  background: var(--soft-pink);
+  background: var(--dark-pink);
   color: var(--text-dark);
   min-height: 700px;
 }
@@ -156,13 +156,13 @@ body {
   box-shadow: 0 0 10px #ffb6c1;
 }
 
-/* 👩 ABOUT SECTION */
+/* About Section*/
 .about-section {
   display: flex;
   align-items: center;
   justify-content: center;
   min-height: 700px;
-  background-color: var(--dark-pink);
+  background-color: var(--soft-pink);
   padding: 40px 16px;
   color: var(--text);
 }
@@ -195,7 +195,176 @@ body {
   font-weight: 600;
 }
 
-/* 📬 CONTACT SECTION */
+/* Skills Section */
+.skills-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--dark-pink);
+  color: var(--text-dark);
+  min-height: 700px;
+  padding: 54px 16px;
+}
+
+.skills-container {
+  max-width: 1100px;
+  width: 100%;
+  text-align: center;
+}
+
+.skills-title {
+  font-size: 40px;
+  font-weight: 700;
+  color: #b22b6f;
+  margin-bottom: 16px;
+}
+
+.skills-text {
+  font-size: 18px;
+  margin-bottom: 48px;
+  color: var(--text-dark);
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 32px;
+}
+
+.skills-category {
+  background: rgba(255, 255, 255, 0.85);
+  border-radius: 16px;
+  padding: 32px 16px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skills-category:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 25px rgba(178, 43, 111, 0.25);
+}
+
+.category-title {
+  font-size: 22px;
+  font-weight: 700;
+  color: #b22b6f;
+  margin-bottom: 16px;
+}
+
+.skills-category ul {
+  list-style: none;
+  padding: 0;
+}
+
+.skills-category li {
+  font-size: 16px;
+  margin-bottom: 10px;
+  color: var(--text);
+  transition: color 0.3s;
+}
+
+.skills-category li:hover {
+  color: #b22b6f;
+}
+
+/* 💻 PROJECTS SECTION */
+.projects-section {
+  background-color: var(--soft-pink);
+  padding: 54px 32px;
+  text-align: center;
+}
+
+.projects-title {
+  font-size: 32px;
+  color: var(--dark-pink2);
+  margin-bottom: 32px;
+  font-weight: bold;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+  justify-content: center;
+  justify-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Individual Project Card */
+.project-card {
+  background-color: #ef5894;
+  color: white;
+  border-radius: 14px;
+  overflow: hidden;
+  width: 100%;
+  max-width: 350px;
+  padding-bottom: 24px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effects */
+}
+
+.project-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 0 20px rgba(255, 105, 180, 0.4);
+}
+
+/* Project Image Placeholder */
+.project-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+/* Project Info */
+.project-name {
+  font-size: 21px;
+  margin-top: 16px;
+}
+
+.project-desc {
+  font-size: 15px;
+  padding: 0 16px;
+  margin: 8px 0 16px 0;
+  color: #ffe6f2;
+}
+
+/* Stack Labels */
+.tech-stack {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.tech-item {
+  background-color: #ffe6f2;
+  color: #c2185b;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+/* Neon Buttons */
+.neon-btn {
+  background-color: white;
+  color: #c2185b;
+  font-weight: 600;
+  padding: 10px 22px;
+  border-radius: 9999px;
+  text-decoration: none;
+  margin: 0 6px;
+  transition: all 0.3s ease-in-out;
+}
+
+.neon-btn:hover {
+  background-color: #ffe6f2;
+  box-shadow: 0 0 10px #ff69b4, 0 0 20px #ff69b4;
+  transform: translateY(-3px);
+}
+
+/* Contact Section*/
 .contact-section {
   display: flex;
   align-items: center;
@@ -263,14 +432,14 @@ body {
 }
 
 .form-header {
-  font-size: 28px;
+  font-size: 24px;
   text-align: center;
   margin-bottom: 24px;
 }
 
 label {
   display: block;
-  font-weight: 600;
+  font-weight: 700;
   margin-bottom: 8px;
 }
 
@@ -280,7 +449,7 @@ textarea {
   padding: 12px;
   border: none;
   border-radius: 8px;
-  background-color: var(--transparent-white);
+  background-color: var(--dark-pink);
   color: var(--white);
   font-size: 16px;
   margin-bottom: 20px;
@@ -310,7 +479,19 @@ textarea:focus {
   transition: 0.3s ease;
 }
 
-.btn:hover, .info-btn:hover, .submit-btn:hover {
-  background-color: #ffe6f2;
+.project-card:hover, .btn:hover, .info-btn:hover, .submit-btn:hover {
   box-shadow: 0 0 10px var(--white);
+}
+
+/* 📱 RESPONSIVE DESIGN */
+@media (max-width: 1024px) {
+  .projects-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 700px) {
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
 }
