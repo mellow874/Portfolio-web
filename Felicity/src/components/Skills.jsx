@@ -1,6 +1,6 @@
 import React from "react";
 
-export function Skills() {
+export default function Skills() {
   return (
     <section id="skills" className="skills-section">
       <div className="skills-container">
@@ -8,6 +8,7 @@ export function Skills() {
         <p className="skills-info">
           Below are the skills I've gained through my Software Engineering journey. 
         </p>
+        <br/>
 
         <div className="skills-grid">
           {/* Languages */}
@@ -62,6 +63,6 @@ export function Skills() {
       </div>
     </section>
   );
-};
+}
 
 
