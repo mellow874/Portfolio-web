@@ -1,18 +1,1 @@
-# React + Vite
-
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## React Compiler
-
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
-
-Note: This will impact Vite dev & build performances.
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+This is my portfolio website built using React and CSS. It follows a pink theme, and has got the Home, About, Skills, Projects, and Contact sections. The navbar links are responsive and when clicked will lead you to your designated section. On the Hero section they is the typewriter effect, download cv button and the view my work button which work, and also the social icons. In order to achieve the social icons, I installed the react-icons, and imported them on my Hero.jsx file in order to work, and for the typewriter effect, I installed the react-typewriter too, and imported. The buttons used in the portfolio are reused multiple times As you navigate my portfolio, and upon reaching the end, they is my contact section, which has a contact, and you can send me an email
