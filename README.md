@@ -1,0 +1,7 @@
+This is my portfolio website built using React and CSS.
+It follows a pink theme, and has got the Home, About, Skills, Projects, and Contact sections.
+The navbar links are responsive and when clicked will lead you to your designated section.
+On the Hero section they is the typewriter effect, download cv button and the view my work button which work, and also the social icons.
+In order to achieve the social icons, I installed the react-icons, and imported them on my Hero.jsx file in order to work, and for the typewriter effect, I installed the react-typewriter too, and imported.
+The buttons used in the portfolio are reused multiple times
+As you navigate my portfolio, and upon reaching the end, they is my contact section, which has a contact, and you can send me an email
