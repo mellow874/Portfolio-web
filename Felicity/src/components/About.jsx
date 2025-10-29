@@ -9,7 +9,8 @@ function About () {
           My name is <span className="highlight">Felicity Mncube</span>, and I’m currently
           a student at Melsoft Academy pursuing a qualification in Software Engineering. I have a
           deep passion for technology and innovation,and through code I'm able to create meaningful 
-          experiences, solving real world problems, and making a positive impact to the world  
+          experiences, solving real world problems, and making a positive impact to the world. I am 
+          definitely looking forward to being a Full stack developer one day! 
         </p>
 
         <p className="about-text">
