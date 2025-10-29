@@ -2,16 +2,18 @@ import React from 'react';
 import { Typewriter } from 'react-simple-typewriter';
 import { FaGithub, FaLinkedin, FaInstagram } from "react-icons/fa";
 
-
 export default function Hero() {
   return (
-    <section id="home" className="hero">
-      <h1 className="hero-title">
-        Welcome to my digital garden, 
-        <h1 className="hero-title">I'm{' '}
-        <span style={{ color: '#b22b6f' }}>
-
-          {/* Typewriter Effect */}
+    <section
+      id="home"
+      className="flex flex-col items-center justify-center text-center pt-36 pb-24 px-5 bg-dark-pink text-gray-800 min-h-[700px]"
+    >
+      <h1 className="text-4xl font-bold mb-2.5 text-deep-pink">
+        Welcome to my digital garden,
+      </h1>
+      <h1 className="text-4xl font-bold mb-2.5 text-deep-pink">
+        I'm{' '}
+        <span className="text-deep-pink">
           <Typewriter
             words={['Felicity.', 'a Software Engineering Student.']}
             loop={true}
@@ -22,31 +24,28 @@ export default function Hero() {
             delaySpeed={1200}
           />
         </span>
-        </h1>
       </h1>
 
-      <p className="intro-line">
-        planting and growing ideas through code.I build user friendly websites and every line of code is a seed for innovation.
+      <p className="text-lg text-gray-700 mb-7 max-w-xl">
+        planting and growing ideas through code. I build user friendly websites and every line of code is a seed for innovation.
       </p>
 
-      {/* Call-to-Action Buttons */}
-      <div className="hero-btns">
-        <a className="btn" href="/Felicity Mncube resume new.pdf" download>Download CV</a>
-        <a className="btn" href="#projects">View My Work</a>
+      <div className="flex gap-3.5 justify-center mb-6">
+        <a
+          className="bg-white text-dark-pink px-4 py-2.5 rounded-full font-semibold no-underline transition-all duration-300 shadow-custom hover-bg-pink-glow"
+          href="/Felicity Mncube resume new.pdf"
+          download
+        >
+          Download CV
+        </a>
+        <a
+          className="bg-white text-dark-pink px-4 py-2.5 rounded-full font-semibold no-underline transition-all duration-300 shadow-custom hover-bg-pink-glow"
+          href="#projects"
+        >
+          View My Work
+        </a>
       </div>
-      
-      {/* Social Media Icons */}
-      <div className="social-icons">
-  <a href="https://github.com/mellow874" target="_blank" rel="noopener noreferrer">
-    <FaGithub />
-  </a>
-  <a href="https://linkedin.com/in.felicity-mncube-65b796322" target="_blank" rel="noopener noreferrer">
-    <FaLinkedin />
-  </a>
-  <a href="https://instagram.com/mellow.874/" target="_blank" rel="noopener noreferrer">
-    <FaInstagram />
-  </a>
-</div>
+
     </section>
   );
 }
