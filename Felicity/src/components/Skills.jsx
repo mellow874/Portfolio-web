@@ -1,4 +1,8 @@
 import React from "react";
+import { FaReact, FaCss3Alt, FaHtml5, FaJs } from "react-icons/fa";
+import { SiNetlify } from "react-icons/si";
+import 'bootstrap-icons/font/bootstrap-icons.css';
+
 
 export default function Skills() {
   return (
@@ -15,10 +19,9 @@ export default function Skills() {
           <div className="skills-category">
             <h3 className="category-title">Languages</h3>
             <ul>
-              <li>HTML</li>
-              <li>CSS</li>
-              <li>JavaScript</li>
-              <li>Basic SQL</li>
+              <li><FaHtml5 /></li>
+              <li><FaCss3Alt /></li>
+              <li><FaJs /></li>
             </ul>
           </div>
 
@@ -26,13 +29,11 @@ export default function Skills() {
           <div className="skills-category">
             <h3 className="category-title">Frameworks & Tools</h3>
             <ul>
-              <li>Bootstrap</li>
-              <li>React (Basic)</li>
-              <li>Version Control (Git & GitHub)</li>
-              <li>VS Code</li>
-              <li>Netlify</li>
+              <li><FaReact /></li>
+              <li><SiNetlify /></li>
               <li>Microsoft Excel</li>
               <li>API Integration</li>
+              <li>Bootstrap</li>
             </ul>
           </div>
 
@@ -52,7 +53,6 @@ export default function Skills() {
             <ul>
               <li>Problem-Solving</li>
               <li>Attention to Detail</li>
-              <li>Time Management</li>
               <li>Planning</li>
               <li>Communication</li>
               <li>Research</li>
