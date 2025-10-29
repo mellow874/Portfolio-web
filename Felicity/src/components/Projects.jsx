@@ -16,7 +16,7 @@ export default function Projects() {
       title: "Burger King Website",
       description:
         "A fully mobile responsive Burger King website which was redesigned and made more appealing and user-friendly",
-      image: {burger},
+      image: burger,
       tech: ["Html", "CSS"],
       liveLink: "https://chipper-gumption-ce400b.netlify.app/",
       codeLink: "https://github.com/mellow874/Burger-King",
