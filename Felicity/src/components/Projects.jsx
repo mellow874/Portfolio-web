@@ -1,5 +1,10 @@
 import React from "react";
 import burger from "../assets/Burger-King.jpeg";
+import clock from "../assets/Clock.jpeg";
+import diamond from "../assets/diamond-tech.jpeg";
+import ferris from "../assets/Ferris-wheel.jpeg";
+import survey from "../assets/Survey-form.jpeg";
+import weather from "../assets/Weather-app.jpeg";
 
 export default function Projects() {
   const projects = [
@@ -7,7 +12,7 @@ export default function Projects() {
       title: "Clock",
       description:
         "A fully functional digital clock displaying current time with AM/PM format, with the light and dark mode option.",
-      image: "src/assets/Clock.jpeg",
+      image: clock,
       tech: ["Html", "CSS", "JavaScript"],
       liveLink: "https://comfy-manatee-a782bc.netlify.app/",
       codeLink: "https://github.com/mellow874/Clock",
@@ -25,7 +30,7 @@ export default function Projects() {
       title: "Weather App",
       description:
         "A real-time weather application that provides information for any location using a public weather API.",
-      image: "src/assets/weather-app.jpeg",
+      image: weather,
       tech: ["HTML", "CSS", "JavaScript", "API"],
       liveLink: "https://celadon-selkie-c1746a.netlify.app/",
       codeLink: "https://github.com/mellow874/final-weather-app",
@@ -34,7 +39,7 @@ export default function Projects() {
       title: "Survey Form",
       description:
         "Built a survey form designed to collect user feedback with various input types and validation.",
-      image: "src/assets/survey-form.jpeg",
+      image: survey,
       tech: ["Html", "CSS"],
       liveLink: "https://majestic-lebkuchen-8f68c1.netlify.app/",
       codeLink: "https://github.com/mellow874/Survey-Form-",
@@ -43,7 +48,7 @@ export default function Projects() {
       title: "Homepage",
       description:
         "A modern and visually appealing homepage layout for a tech company, showcasing services and portfolio.",
-      image: "src/assets/diamond-tech.jpeg",
+      image: diamond,
       tech: ["Html", "Bootstrap", "CSS"],
       liveLink: "https://gilded-praline-0ad7e4.netlify.app/",
       codeLink: "https://github.com/mellow874/Diamond-Tech",
@@ -52,7 +57,7 @@ export default function Projects() {
       title: "Ferris Wheel",
       description:
         "A simple Ferris Wheel webpage layout using HTML and CSS to demonstrate design skills.",
-      image: "src/assets/ferris-wheel.jpeg",
+      image: ferris,
       tech: ["HTML", "CSS"],
       liveLink: "https://mellow874.github.io/Ferris-Wheel/",
       codeLink: "https://github.com/mellow874/Ferris-Wheel",

@@ -10,7 +10,7 @@ import './index.css';
 
 export default function App(){
   return (
-    <>
+    <div>
       <Navbar />
       <main>
         <Hero />
@@ -50,8 +50,6 @@ export default function App(){
               </div>
 
       </footer>
-    </>
+    </div>
   );
 }
-
-
