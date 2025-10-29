@@ -1,4 +1,5 @@
 import React from "react";
+import burger from "../assets/Burger-King.jpeg";
 
 export default function Projects() {
   const projects = [
@@ -6,7 +7,7 @@ export default function Projects() {
       title: "Clock",
       description:
         "A fully functional digital clock displaying current time with AM/PM format, with the light and dark mode option.",
-      image: "src/assets/clock.jpeg",
+      image: "src/assets/Clock.jpeg",
       tech: ["Html", "CSS", "JavaScript"],
       liveLink: "https://comfy-manatee-a782bc.netlify.app/",
       codeLink: "https://github.com/mellow874/Clock",
@@ -15,7 +16,7 @@ export default function Projects() {
       title: "Burger King Website",
       description:
         "A fully mobile responsive Burger King website which was redesigned and made more appealing and user-friendly",
-      image: "src/assets/burger-king.jpeg",
+      image: {burger},
       tech: ["Html", "CSS"],
       liveLink: "https://chipper-gumption-ce400b.netlify.app/",
       codeLink: "https://github.com/mellow874/Burger-King",
