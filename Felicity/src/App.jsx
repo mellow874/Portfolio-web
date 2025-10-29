@@ -19,6 +19,9 @@ export default function App(){
         <Projects />
         <Contact />
       </main>
+      <footer>
+        <p className="footer-text">© 2025 Felicity Mncube. All rights reserved.</p>
+      </footer>
     </>
   );
 }
