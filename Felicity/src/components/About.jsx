@@ -2,15 +2,19 @@ import React from "react";
 
 export default function About() {
   return (
+    // Main section with an ID for anchor linking and styling for layout and background
     <section
       id="about"
       className="flex items-center justify-center min-h-[700px] bg-soft-pink py-10 px-4"
     >
+      {/* Container with max width, padding, rounded corners, and custom shadow */}
       <div className="max-w-3xl bg-white p-12 rounded-3xl shadow-custom">
+        {/* Section heading with large text, centered alignment, and bold styling */}
         <h2 className="text-5xl text-center mb-8 text-dark-pink-2 font-bold">
           About Me 💫
         </h2>
 
+       {/* First paragraph with even spacing, and large font which makes it  to read */ }
         <p className="leading-relaxed text-lg mb-6 text-gray-700">
           My name is <span className="text-dark-pink-2 font-semibold">Felicity Mncube</span>, and I'm currently
           a student at Melsoft Academy pursuing a qualification in Software Engineering. I have a
@@ -19,6 +23,7 @@ export default function About() {
           forward to being a Full-stack developer one day.
         </p>
 
+      
         <p className="leading-relaxed text-lg mb-6 text-gray-700">
           I completed my matric in 2023, and the following year, I decided to
           explore the world of programming. I started by learning the basics of web development,

@@ -1,16 +1,21 @@
 import React from "react";
 
+//This function renders the contact section
 export default function Contact() {
   return (
+    //beginning of the section with its own background, centered and own text color
     <section
       id="contact"
       className="flex items-center justify-center min-h-[700px] bg-dark-pink py-10 px-4 text-white"
     >
+      {/* Outer container that wraps both text and form, spacing and responsive layout */}
       <div className="flex flex-wrap justify-between items-start w-full max-w-[1100px] gap-8">
+        {/*Left column*/}
         <div className="flex-1 min-w-[300px]">
           <h2 className="text-5xl mb-4 font-bold text-white">
             Let's Collaborate💌
           </h2>
+          {/*Contact Info*/}
           <p className="text-lg leading-relaxed max-w-[500px]">
             If you'd like to get in touch with me, or know more info, please reach out via email at{" "}
             <span className="underline cursor-pointer text-dark-pink-2 font-bold hover:text-light-pink">
@@ -20,10 +25,14 @@ export default function Contact() {
           </p>
         </div>
 
+        {/*Right column, contact form*/}
         <div className="flex-1 min-w-[320px] flex justify-center">
+          {/*Form with background, rounded corners, box-shadow, and padding*/}
           <form className="bg-white/15 p-8 rounded-2xl shadow-custom w-full max-w-[400px] text-white">
+          {/*form heading*/}
             <h3 className="text-2xl text-center mb-6">Send Me a Message ✨</h3>
 
+          {/*Full name input*/}
             <label className="block font-bold mb-2" htmlFor="name">
               Full Name
             </label>
@@ -34,7 +43,7 @@ export default function Contact() {
               required
               className="w-full p-3 border-none rounded-lg bg-deep-pink text-white text-base mb-5 transition-all duration-300 placeholder:text-light-pink focus:outline-none"
             />
-
+            {/*Email input*/}
             <label className="block font-bold mb-2" htmlFor="email">
               Email
             </label>
@@ -45,7 +54,7 @@ export default function Contact() {
               required
               className="w-full p-3 border-none rounded-lg bg-deep-pink text-white text-base mb-5 transition-all duration-300 placeholder:text-light-pink"
             />
-
+            {/*Message input*/}
             <label className="block font-bold mb-2" htmlFor="message">
               Message
             </label>
@@ -56,7 +65,7 @@ export default function Contact() {
               required
               className="w-full p-3 border-none rounded-lg bg-deep-pink text-white text-base mb-5 transition-all duration-300 placeholder:text-light-pink"
             ></textarea>
-
+            {/*Submit button with rounded corners, hover effects with box shadow*/}
             <button
               type="submit"
               className="w-full p-3.5 text-base font-bold bg-white text-deep-pink rounded-full border-none cursor-pointer transition-all duration-300 shadow-custom hover:bg-pink-50 hover:shadow-white-glow"

@@ -1,4 +1,5 @@
 import React from "react";
+//imported the images
 import burger from "../assets/Burger-King.jpeg";
 import clock from "../assets/Clock.jpeg";
 import diamond from "../assets/diamond-tech.jpeg";
@@ -7,6 +8,7 @@ import survey from "../assets/Survey-form.jpeg";
 import weather from "../assets/Weather-app.jpeg";
 
 export default function Projects() {
+  //Array of project objects, (title, description, image, technology, livelink, and codelink)
   const projects = [
     {
       title: "Clock",
@@ -67,21 +69,26 @@ export default function Projects() {
   return (
     <section id="projects" className="bg-soft-pink py-14 px-8 text-center">
       <h2 className="text-4xl text-dark-pink-2 mb-8 font-bold">My Projects 🚀</h2>
+      {/*Grid layout for the project cards, and mobile responsiveness*/}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 justify-items-center max-w-[1200px] mx-auto">
         {projects.map((project, index) => (
           <div
             className="bg-card-pink text-deep-pink text-l font-bold rounded-2xl overflow-hidden w-full max-w-[350px] pb-6 transition-all duration-300 hover:-translate-y-2"
             key={index}
           >
+            {/*Project image*/}
             <img
               src={project.image}
               alt={project.title}
               className="w-full h-[200px] object-cover text-white"
             />
+            {/*Project title*/}
             <h3 className="text-xl mt-4">{project.title}</h3>
+            {/*Project description*/}
             <p className="text-sm px-4 my-2 text-light-pink">
               {project.description}
             </p>
+            {/*Languages/tech used*/}
             <div className="flex flex-wrap justify-center gap-2 mb-4">
               {project.tech.map((tech, i) => (
                 <span
@@ -91,6 +98,7 @@ export default function Projects() {
                   {tech}
                 </span>
               ))}
+              {/*Link to live demo*/}
             </div>
             <div className="flex justify-center gap-3">
               <a
@@ -101,6 +109,7 @@ export default function Projects() {
               >
                 Live Demo
               </a>
+              {/*Link to source code*/}
               <a
                 href={project.codeLink}
                 className="bg-white text-tech-pink font-semibold px-5 py-2.5 rounded-full no-underline transition-all duration-300 hover-bg-pink-glow"

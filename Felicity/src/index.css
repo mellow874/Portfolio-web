@@ -3,7 +3,7 @@
 @tailwind components;
 @tailwind utilities;
 
-/* ✅ Custom Variables like Tailwind would create */
+/* CSS Variables */
 :root {
   --dark-pink: #ff81c0;
   --soft-pink: #f8bbd0;
@@ -21,7 +21,7 @@
   --shadow-white-glow: 0 0 10px rgba(255, 255, 255, 0.5);
 }
 
-/* ✅ Custom Tailwind utility classes */
+/* Tailwind utility classes */
 @layer utilities {
   .text-dark-pink { color: var(--dark-pink); }
   .text-soft-pink { color: var(--soft-pink); }
