@@ -2,20 +2,20 @@ import React from "react";
 import emailjs from '@emailjs/browser';
 
 export default function Contact() {
-  const form = useRef();
-
   const sendEmail = (e) => {
     e.preventDefault();
 
+    const form = document.getElementById("contact-form");
+
     emailjs.sendForm(
-      'service_8d3icaa',     //  EmailJS service ID
-      'template_kivkt5j',    //  EmailJS template ID
-      form.current,
-      'yFkuZFCTqOTcIu9w5'      // EmailJS public key
+      'service_8d3icaa',
+      'template_kivkt5j',
+      form,
+      'yFkuZFCTqOTcIu9w5'
     )
     .then(() => {
       alert('Message sent successfully!');
-      form.current.reset();
+      form.reset();
     })
     .catch((error) => {
       alert('Failed to send message. Please try again.');
@@ -44,7 +44,7 @@ export default function Contact() {
 
         <div className="flex-1 min-w-[320px] flex justify-center">
           <form
-            ref={form}
+            id="contact-form"
             onSubmit={sendEmail}
             className="bg-white/15 p-8 rounded-2xl shadow-custom w-full max-w-[400px] text-white"
           >
