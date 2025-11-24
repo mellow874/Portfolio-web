@@ -11,7 +11,7 @@ export default function Contact() {
       'service_8d3icaa',
       'template_kivkt5j',
       form,
-      'yFkuZFCTqOTcIu9w5'
+      'z_MqbLygXovlbjnge'
     )
     .then(() => {
       alert('Message sent successfully!');
