@@ -2,22 +2,22 @@ import React from "react";
 //imported the images
 import burger from "../assets/Burger-King.jpeg";
 import clock from "../assets/Clock.jpeg";
-import diamond from "../assets/diamond-tech.jpeg";
-import ferris from "../assets/Ferris-wheel.jpeg";
-import survey from "../assets/Survey-form.jpeg";
+import chart from "../assets/chart.jpeg";
+import notes from "../assets/Private-notes-app.jpeg";
+import reservation from "../assets/reservation.jpeg";
 import weather from "../assets/Weather-app.jpeg";
 
 export default function Projects() {
   //Array of project objects, (title, description, image, technology, livelink, and codelink)
   const projects = [
     {
-      title: "Clock",
+      title: "Booking-Reservation-System",
       description:
-        "A fully functional digital clock displaying current time with AM/PM format, with the light and dark mode option.",
-      image: clock,
-      tech: ["Html", "CSS", "JavaScript"],
-      liveLink: "https://comfy-manatee-a782bc.netlify.app/",
-      codeLink: "https://github.com/mellow874/Clock",
+        "A modern and visually appealing booking reservation system for hotels, allowing users to make reservations online, and also check availabilty.",
+      image: reservation,
+      tech: ["ReactJS", "Tailwindcss", "Nodejs", "Express", "Supabase"],
+      liveLink: "https://booking-reservation-system.vercel.app/",
+      codeLink: "https://github.com/mellow874/Booking-Reservation-System.git",
     },
     {
       title: "Burger King Website",
@@ -38,31 +38,31 @@ export default function Projects() {
       codeLink: "https://github.com/mellow874/final-weather-app",
     },
     {
-      title: "Survey Form",
+      title: "Private-Notes-App",
       description:
-        "Built a survey form designed to collect user feedback with various input types and validation.",
-      image: survey,
-      tech: ["Html", "CSS"],
-      liveLink: "https://majestic-lebkuchen-8f68c1.netlify.app/",
-      codeLink: "https://github.com/mellow874/Survey-Form-",
+        "Built a private notes app whereby users create an account, login successfully and create, edit, and delete notes securely.",
+      image: notes,
+      tech: ["ReactJS", "Tailwindcss", "Nodejs", "Express", "Supabase"],
+      liveLink: "https://private-notes-flax.vercel.app/",
+      codeLink: "https://github.com/mellow874/Private-Notes.git",
     },
     {
-      title: "Homepage",
+      title: "Clock",
       description:
-        "A modern and visually appealing homepage layout for a tech company, showcasing services and portfolio.",
-      image: diamond,
-      tech: ["Html", "Bootstrap", "CSS"],
-      liveLink: "https://gilded-praline-0ad7e4.netlify.app/",
-      codeLink: "https://github.com/mellow874/Diamond-Tech",
+        "A fully functional digital clock displaying current time with AM/PM format, with the light and dark mode option.",
+      image: clock,
+      tech: ["Html", "CSS", "JavaScript"],
+      liveLink: "https://comfy-manatee-a782bc.netlify.app/",
+      codeLink: "https://github.com/mellow874/Clock",
     },
     {
-      title: "Ferris Wheel",
+      title: "CryptX Dashboard",
       description:
-        "A simple Ferris Wheel webpage layout using HTML and CSS to demonstrate design skills.",
-      image: ferris,
-      tech: ["HTML", "CSS"],
-      liveLink: "https://mellow874.github.io/Ferris-Wheel/",
-      codeLink: "https://github.com/mellow874/Ferris-Wheel",
+        "Provides a centralized dashboard for monitoring cryptocurrency trends and transactions.",
+      image: chart,
+      tech: ["ReactJS", "Tailwindcss"],
+      liveLink: "https://chart-jp1t.vercel.app/",
+      codeLink: "https://github.com/mellow874/Chart.git",
     },
   ];
 
