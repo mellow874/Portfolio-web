@@ -1,16 +1,17 @@
-import React from "react";
+import React, {useRef} from "react";
 import emailjs from '@emailjs/browser';
 
 export default function Contact() {
+  const form = useRef();
   const sendEmail = (e) => {
     e.preventDefault();
 
     const form = document.getElementById("contact-form");
 
     emailjs.sendForm(
-      'service_8d3icaa',
-      'template_kivkt5j',
-      form,
+      'service_lazynmb',
+      'template_9xee417',
+      form.current,
       'z_MqbLygXovlbjnge'
     )
     .then(() => {
@@ -43,7 +44,7 @@ export default function Contact() {
         </div>
 
         <div className="flex-1 min-w-[320px] flex justify-center">
-          <form
+          <form ref={form}
             id="contact-form"
             onSubmit={sendEmail}
             className="bg-white/15 p-8 rounded-2xl shadow-custom w-full max-w-[400px] text-white"
@@ -66,6 +67,15 @@ export default function Contact() {
               id="email"
               name="email"
               placeholder="Enter your email"
+              required
+              className="w-full p-3 border-none rounded-lg bg-deep-pink text-white text-base mb-5 transition-all duration-300 placeholder:text-light-pink"
+            />
+
+            <label className="block font-bold mb-2" htmlFor="email">Subject</label>
+            <input
+              type="subject"
+              name="subject"
+              placeholder="Your subject"
               required
               className="w-full p-3 border-none rounded-lg bg-deep-pink text-white text-base mb-5 transition-all duration-300 placeholder:text-light-pink"
             />
