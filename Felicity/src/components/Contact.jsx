@@ -6,8 +6,6 @@ export default function Contact() {
   const sendEmail = (e) => {
     e.preventDefault();
 
-    const form = document.getElementById("contact-form");
-
     emailjs.sendForm(
       'service_lazynmb',
       'template_9xee417',
