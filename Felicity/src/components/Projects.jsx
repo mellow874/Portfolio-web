@@ -3,7 +3,7 @@ import React from "react";
 import burger from "../assets/Burger-King.jpeg";
 import clock from "../assets/Clock.jpeg";
 import chart from "../assets/chart.jpeg";
-import notes from "../assets/Private-notes-app.jpeg";
+import notes from "../assets/Private-notes.jpeg";
 import reservation from "../assets/reservation.jpeg";
 import weather from "../assets/Weather-app.jpeg";
 
