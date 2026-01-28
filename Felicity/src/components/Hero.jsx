@@ -36,7 +36,7 @@ export default function Hero() {
         {/*Download cv button with rounded corners plus custom hover effects and box-shadow*/}
         <a
           className="bg-white text-dark-pink px-4 py-2.5 rounded-full font-semibold no-underline transition-all duration-300 shadow-custom hover-bg-pink-glow"
-          href="/Felicity Mncube resume new.pdf"
+          href="/Felicity Mncube CV.pdf"
           download
         >
           Download CV
