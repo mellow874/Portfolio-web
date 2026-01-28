@@ -16,7 +16,7 @@ export default function Contact() {
       alert('Message sent successfully!');
       form.reset();
     })
-    .catch((error) => {
+    ((error) => {
       alert('Failed to send message. Please try again.');
     });
   };
